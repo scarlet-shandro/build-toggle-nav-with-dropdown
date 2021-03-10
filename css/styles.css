@@ -7,7 +7,6 @@ body {
 
 .container {
     padding: 1rem;
-    
 }
 
 
@@ -23,7 +22,7 @@ h1 {
 }
 
 h1::first-letter {
-    color: rgb(255,105,180;)
+    color: rgb(255,105,180);
 }
 
 h2 {
@@ -35,6 +34,12 @@ h2 {
 
 header {
     background-color: #fff;
+}
+
+.menu-icon {
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
 }
 
 header .flex-container {
@@ -55,8 +60,9 @@ header a svg {
 }
 
 .main-menu li:last-of-type {
-    border-bottom:none ;
+    border-bottom: none ;
 }
+
 
 .main-menu a {
     text-decoration: none;
@@ -69,13 +75,7 @@ header a svg {
     align-items: center;
 }
 
-.main-menu svg:last-of-type {
-    margin-left: auto;
-}
 
-.main-menu svg:first-of-type {
-    margin-right: 10px;
-}
 .main-menu a:hover,
 .main-menu a:active {
     background-color: #e3eaf3;
@@ -93,11 +93,17 @@ header a svg {
     overflow: hidden;
 }
 
+.main-menu svg:last-of-type {
+    margin-left: auto;
+}
+
+.main-menu svg:first-of-type {
+    margin-right: 10px;
+}
+
 .main-menu li:hover > .dropdown-menu {
     max-height: initial;
 }
-
-
 nav {
     max-height: 0;
     overflow: hidden;
@@ -106,18 +112,9 @@ nav {
     left: 0;
     transition: all 0.6s ease-in-out;
 }
-
 .show-nav {
     max-height: 100vh;
 }
-
-
-.menu-icon {
-    width: 40px;
-    text-align: center;
-    cursor: pointer;
-}
-
 
 
 @media only screen and (min-width: 1300px) {
@@ -134,7 +131,35 @@ nav {
 
     .main-menu {
         display: flex;
+        justify-content: space-between;
     }
 
+    .main-menu li {
+        border: none;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        max-height: 100vh;
+    }
+
+    .categories:first-child {
+        padding-left: 20rem;
+    }
     
 }
+
+
+
+
+
+
+
+
+/*
+
+*/
